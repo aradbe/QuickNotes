@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f3f3f3;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+  width: 90%;
+  max-width: 900px;
+  margin: 40px auto;
+}
+
+h1 {
+  text-align: center;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.note-form input {
+  padding: 10px;
+  font-size: 16px;
+}
+
+.note-form textarea {
+  min-height: 120px;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+  overflow: hidden;
+}
+
+.note-form button {
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  align-items: start;
+}
+
+.note-card {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.note-card h3 {
+  margin: 0 0 10px;
+  font-size: 22px;
+}
+
+.note-card p {
+  margin-bottom: 20px;
+  white-space: pre-wrap;
+}
+
+.note-card small {
+  color: gray;
+}
+
+.delete-btn {
+  align-self: center;
+  margin-top: 20px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+.ReactModal__Content {
+  border-radius: 12px !important;
+  padding: 30px !important;
+}
+
+.ReactModal__Overlay {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.note-modal-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #222;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.note-form select {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+.Personal {
+  background: #fff8c5;
+}
+
+.Work {
+  background: #d6ecff;
+}
+
+.School {
+  background: #dfffdc;
+}
+
+.Other {
+  background: #f3ddff;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+}
+
+.filters button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #4f46e5;
+  color: white;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background: #4338ca;
+}
